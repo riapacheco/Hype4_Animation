@@ -1,0 +1,171 @@
+<style>
+	html {
+		font-family: "Avenir", sans-serif;
+	}
+	.twin-infobox {
+		width: 800px;
+		height: 300px;
+		background-color: transparent;
+		border-radius: 15px;
+		
+		position: relative;
+		
+		border: 5px solid #06182c;
+	}
+	
+	.indicator-data {
+		border-radius: 10px 0px 0px 10px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 25%;
+		background-color: #06182c;
+		
+		display: flex;
+		flex-flow: column nowrap;
+		
+		padding: 15px;
+	}
+	.well-name-placeholder{
+		display: inline-block;
+		width: 90px;
+		height: 20px;
+		border-radius: 6px;
+		opacity: 0.4;
+	}
+	.well-name {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-start;
+		justify-content: flex-start;
+		margin-bottom: 1.5rem;
+	}
+	.well {
+		width: 70px;
+		height: 12px;
+		border-radius: 5px;
+		opacity: 0.7;
+		background-color: #19eb99;
+		margin-bottom: 0.3rem;
+	}
+	.stage {
+		width: 30px;
+		height: 10px;
+		border-radius: 5px;
+		opacity: 0.7;
+		background-color: #19eb99;
+	}
+	
+	.operation-activity {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 4rem;
+	}
+	
+	.operation-group {
+		margin-right: 1.5rem;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.blue-header {
+		width: 60px;
+		height: 12px;
+		background-color: #134a9b50;
+		border-radius: 5px;
+		margin-bottom: 0.35rem;
+	}
+	.white-data {
+		width: 50px;
+		height: 10px;
+		background-color: #FFFFFF60;
+		border-radius: 5px;
+	}
+	.pressure-threshold {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	
+	.pressure-label {
+		width: 100px;
+		height: 12px;
+		border-radius: 5px;
+		background-color: #ffffff95;
+		margin-bottom: 0.5rem;
+	}
+	.max-min {
+		display: flex;
+		width: 100%;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	.max-group { 		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.max-label {
+		width: 60px;
+		height: 11px;
+		background-color: #134a9b;
+		border-radius: 5px;
+		margin-bottom: 0.5rem;
+	}
+	.dropdown {
+		height: 23px;
+		border-radius: 5px;
+		width: 80px;
+		background-color: black;
+	}
+	
+	
+</style>
+
+<div class="twin-infobox">
+	<div class="indicator-data">
+		<div class="well-name">
+			<div class="well"></div>
+			<div class="stage"></div>
+		</div>
+		<div class="operation-activity">
+			<div class="operation-group">
+				<div class="blue-header"></div>
+				<div class="white-data"></div>
+			</div>
+			<div class="operation-group">
+				<div class="blue-header"></div>
+				<div class="white-data"></div>
+			</div>
+		</div>
+<!-- 		<div class="pressure-threshold"> -->
+<!-- 			<div class="pressure-label"></div> -->
+<!-- 			<div class="max-min"> -->
+<!-- 				<div class="max-group"> -->
+<!-- 					<div class="max-label"> -->
+<!-- 					</div> -->
+<!-- 					<div class="dropdown"></div> -->
+<!-- 				</div> -->
+<!-- 				 -->
+<!-- 				<div class="min-group"> -->
+<!-- 					<div class="max-label min"></div> -->
+<!-- 					<div class="dropdown"></div> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+		
+	</div>
+	
+	<div class="frac-diagrams">
+		<div class="diagram-one">
+			
+		</div>
+		<div class="diagram-two"></div>
+	</div>
+</div>

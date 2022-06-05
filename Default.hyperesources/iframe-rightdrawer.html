@@ -1,0 +1,121 @@
+<style>
+* { box-sizing: border-box; }
+
+.right-bar {
+	width: 250px;
+	height: 590px;
+	background-color: #06182c;
+	border-radius: 10px;
+}
+.section {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: inherit;
+	
+	padding: 20px;
+}
+.section-block {
+	width: inherit;
+	display: inline-flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-bottom: 1rem;
+}
+
+.section-block.first {
+	margin-bottom: 4rem;
+}
+
+.label {
+	height: 12px;
+	width: 40px;
+	background-color: #ffffff50;
+	border-radius: 5px;
+	margin-bottom: 0.6rem;
+}
+.label.small { width: 50px; }
+.label.medium { width: 70px; }
+
+
+.dropdown {
+	border-radius: 6px;
+	min-height: 40px;
+	width: 85%;
+	background-color: #00000050;
+	color: white;
+	position: relative;
+}
+.dropdown.single {
+	margin-bottom: 0.5rem;
+	min-height: 30px;
+}
+
+.indicator {
+	height: inherit;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 10px;
+	border-radius: 4px 0px 0px 4px;
+}
+
+.indicator.success {
+	background-color: #299F5780;
+}
+.indicator.warning {
+	background-color: #FAD21E40;
+}
+.indicator.danger {
+	background-color: #ED100040;
+}
+
+
+
+</style>
+<div class="right-bar">
+
+	<!--Section (5 Blocks) -->
+	<div class="section">
+		<div class="section-block first">
+			<div class="label medium"></div>
+			<div class="dropdown">
+			</div>
+		</div>
+		
+		<div class="section-block">
+			<div class="label small"></div>
+			<div class="dropdown">
+				<div class="indicator success"></div>
+			</div>
+		</div>
+		
+		<div class="section-block">
+			<div class="label medium"></div>
+			<div class="dropdown">
+				<div class="indicator danger"></div>
+			</div>
+		</div>
+		
+		<div class="section-block">
+			<div class="label small"></div>
+			<div class="dropdown">
+				<div class="indicator success"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Second Section-->
+	<div class="section">
+		<div class="section-block">
+			<div class="label medium"></div>
+			<div class="dropdown single"></div>
+			<div class="dropdown single"></div>
+			<div class="dropdown single"></div>
+<!-- 			<div class="dropdown single"></div> -->
+		</div>
+	</div>
+</div>
